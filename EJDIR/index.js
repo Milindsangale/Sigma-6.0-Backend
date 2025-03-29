@@ -23,11 +23,10 @@ app.get("/ig/:username", (req, res) => {
     let {username}= req.params;
     const instadata =require("./data.json");
     const data = instadata[username];
-    res.render("instagram.ejs",{data};
-        console.log(data);
+   /*  console.log(data); */
+    res.render("instagram.ejs",{data});
+        /* console.log(data); */
 });
-
-
 
 
 app.get("/rolldice", (req, res) => {
