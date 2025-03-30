@@ -38,3 +38,8 @@ app.get("/rolldice", (req, res) => {
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
+
+
+app.get("/about", (req, res) => {
+    res.send("This is about page");
+});

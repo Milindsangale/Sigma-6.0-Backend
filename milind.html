@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Navbar</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head> -->
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Build it up</a>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Project</a></li>
+                <li><a href="#">Tutorial</a></li>
+                <li><a href="#">Comminity</a></li>
+                <li><a href="#">Contact</a></li>
+                <i class="far fa-shopping-cart"></i>
+                
+            </ul>
+        </div>
+    </nav>
+
+<style>
+    body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.navbar {
+    background-color: #333; /* Dark background color */
+    padding: 15px 0; /* Add some padding top and bottom */
+}
+
+.container {
+    max-width: 1200px; /* Limit the width of the navbar content */
+    margin: 0 auto; /* Center the content horizontally */
+    display: flex; /* Enable flexbox for layout */
+    justify-content: space-between; /* Distribute space between logo and links */
+    align-items: center; /* Vertically align logo and links */
+    padding: 0 20px; /* Add some padding on the sides */
+}
+
+.logo {
+    color: white; /* White text color for the logo */
+    font-size: 1.5em; /* Increase font size of the logo */
+    text-decoration: none; /* Remove underline from the logo link */
+}
+
+.nav-links {
+    list-style: none; /* Remove bullet points from the list */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Arrange list items horizontally */
+}
+
+.nav-links li {
+    margin-left: 20px; /* Add spacing between the links */
+}
+
+.nav-links li:first-child {
+    margin-left: 0; /* Remove left margin from the first link */
+}
+
+.nav-links a {
+    color: white; /* White text color for the links */
+    text-decoration: none; /* Remove underline from the links */
+    padding: 8px 12px; /* Add some padding around the link text */
+    border-radius: 5px; /* Optional: Add rounded corners to the links */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.nav-links a:hover {
+    background-color: #555; /* Darker background color on hover */
+}
+</style>
+
+    </body>
+</html>

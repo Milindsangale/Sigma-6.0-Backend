@@ -8,3 +8,11 @@ figlet("Milind Raosaheb Sangale", function (err, data) {
   }
   console.log(data);
 });
+
+
+
+
+let h1 = document.querySelector("h11");
+let h2 = document.querySelector("h22");
+let pasra =document.querySelectorAll(0);
+let h1 =document.querySelector("h1");
