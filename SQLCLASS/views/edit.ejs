@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Username</title>
+    <style> 
+        body {
+            background-color: lightblue;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h2 {
+            color: darkblue;
+        }
+        form {
+            margin-top: 20px;
+        }
+        textarea, input[type="password"] {
+            width: 300px;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: darkblue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>You are about to edit this user : <%= user.email %></h2>
+    <form method="post" action="/user/<%= user.id %>?_method=PATCH">
+        <textarea placeholder="Enter new Username" name="username" id="username"></textarea>
+        <br>
+        <input type="password" name="password" placeholder="Enter your password" id="password">
+        <button type="submit">Edit</button>
+    </form>
+</body>
+</html>
