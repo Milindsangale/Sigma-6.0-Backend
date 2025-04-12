@@ -19,7 +19,7 @@ async function main() {
 
 // Create a schema for the user collection
 const UserSchema = new  mongoose.Schema({
-    Name: String, 
+    name: String, 
     email: String,
     age: Number,
   });
@@ -40,21 +40,30 @@ const User = mongoose.model('User', UserSchema);
      */
 
 
+//find
+
+/* User.find({name:"sanika",email:"tony@gmail.com"})
+    .then((res) => {
+        console.log( res[0]);
+    })
+    .catch((err) => {
+        console.error(err);
+    }); */
+
+    // find by ID
+User.find({  _id:"67fabfa806073106bc0fce51",_id:"67fabfa806073106bc0fce50"})
+    .then((res) => {
+        console.log(res);
+    })
+    .catch((err) => {
+        console.error(err);
+    });
+
 
     
-
-// Create a new user instance
-
-// Create a new user instance
-/* const user2 = new User({
-    name:"sanika",
-    email:"sanika9699@gmail.com",
-    age: 25,
-});
-
-
 // Save the user to the database
-user2
+
+/* user2
     .save()
     .then((res) => {
         console.log('User saved successfully!',res);
@@ -62,5 +71,5 @@ user2
     .catch((err) => {
         console.error('Error saving user:', err);
     });
- */
 
+ */
