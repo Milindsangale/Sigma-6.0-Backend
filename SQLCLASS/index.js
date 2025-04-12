@@ -7,7 +7,7 @@ const methodOverride = require('method-override');
 
 
 app.use(methodOverride('_method'));
-app.use(express.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
+app.use(express.urlencoded({ extended: true })); 
 app.set('view engine', 'ejs');
 app.set("views", path.join(__dirname, "/views"));
 
@@ -22,10 +22,7 @@ const connection = mysql.createConnection({
 
   // insert data into the table
 let q = "INSERT INTO  user (id, username, email, password) values ?";
-/* let users =[
-["12345fsfs","123_newuser","smilind9699@gmail.ocm","abc"],
-["1234565465","123_newuser","smilind9699@gmail.ocm","abc"],
-]; */
+
 let  getRandomUser = () => {
     return [  
     faker.string.uuid(),
