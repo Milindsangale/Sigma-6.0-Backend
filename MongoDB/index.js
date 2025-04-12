@@ -51,7 +51,16 @@ const User = mongoose.model('User', UserSchema);
     }); */
 
     // find by ID
-User.find({  _id:"67fabfa806073106bc0fce51",_id:"67fabfa806073106bc0fce50"})
+/* User.find({  _id:"67fabfa806073106bc0fce51",_id:"67fabfa806073106bc0fce50"})
+    .then((res) => {
+        console.log(res);
+    })
+    .catch((err) => {
+        console.error(err);
+    }); */
+
+// update by ID
+User.updateOne({ _id: "67fabfa806073106bc0fce51" },{age:100})
     .then((res) => {
         console.log(res);
     })
@@ -60,7 +69,6 @@ User.find({  _id:"67fabfa806073106bc0fce51",_id:"67fabfa806073106bc0fce50"})
     });
 
 
-    
 // Save the user to the database
 
 /* user2
