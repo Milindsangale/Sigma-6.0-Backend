@@ -60,14 +60,22 @@ const User = mongoose.model('User', UserSchema);
     }); */
 
 // update by ID
-User.updateOne({ _id: "67fabfa806073106bc0fce51" },{age:100})
+/* User.updateOne({ _id: "67fabfa806073106bc0fce51" },{age:100})
     .then((res) => {
         console.log(res);
     })
     .catch((err) => {
         console.error(err);
-    });
+    }); */
 
+    //delate
+User.deleteOne({ _id: "67fabf6be1c857a4ab0c91d3" })
+    .then((res) => {
+        console.log('User deleted successfully!',res);
+    })
+    .catch((err) => {
+        console.error('Error deleting user:', err);
+    });
 
 // Save the user to the database
 
