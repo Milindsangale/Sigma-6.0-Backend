@@ -37,6 +37,30 @@ let chat = [
         message:"Hello",
         createdAt: new Date(),
     },
+    {
+        from:"John1",
+        to:"Doe",
+        message:"Hello",
+        createdAt: new Date(),
+    },
+    {
+        from:"John2",
+        to:"Doe",
+        message:"Hello",
+        createdAt: new Date(),
+    },
+    {
+        from:"John3",
+        to:"Doe",
+        message:"Hello",
+        createdAt: new Date(),
+    },
+    {
+        from:"John4",
+        to:"Doe",
+        message:"Hello",
+        createdAt: new Date(),
+    },
     
     
 ];
