@@ -102,3 +102,13 @@ User.deleteOne({ _id: "67faba82a88a54af56cd725f" })
     });
 
  */
+
+    //update
+
+User.updateOne({ _id: "680138879a1fc561f880fe96" },{price:100})
+    .then((res) => {
+        console.log('update',res);
+    })
+    .catch((err) => {
+        console.error('error',err);
+    });
